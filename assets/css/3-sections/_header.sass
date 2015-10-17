@@ -1,0 +1,187 @@
+.home-wrap
+  header
+    width: 100%
+    height: 60px
+
+    background-color: white
+
+    .header-position
+      display: flex
+      flex-direction: row
+
+      height: 60px
+
+      align-items: center
+      justify-content: center
+
+      .logo
+        position: absolute
+        top: 0
+        left: 0
+
+        max-width: 60px
+        height: 60px
+        margin: 0
+        padding: 0
+
+        background:
+          position: center
+
+          image: url(../img/header/logo.svg)
+          repeat: no-repeat
+          size: contain
+        transition: 400ms ease-in-out
+
+        &:hover
+          transform: rotate(360deg)
+
+        +hide-text
+      .site-nav
+        ul
+          position: relative
+
+          display: inline-flex
+
+          text-align: center
+
+          li
+            padding: 0 20px 0 0
+
+            &:last-child
+              margin-bottom: 0
+          span
+            position: absolute
+            right: 5px
+            bottom: 90px
+
+            visibility: hidden
+
+            color: black
+
+            font-size: 20px
+
+          a
+            transition: 200ms ease-in-out
+            &:hover
+              color: #009999+20
+
+      .mobile-nav-toggle
+        display: none
+
+        width: 50px
+        height: 50px
+        margin-right: 20px
+
+        cursor: pointer
+
+        align-items: center
+
+        span,
+        span:before,
+        span:after
+          position: relative
+
+          display: block
+
+          width: 100%
+          height: 2px
+
+          content: ""
+
+          transition: all 0.3s ease-in-out
+
+          background: #333
+
+        span
+          &:before
+           top: 15px
+
+        span
+          &:after
+           top: -17px
+
+        &.is-open span
+          background: transparent
+
+        &.is-open span:before,
+        &.is-open span:after
+          top: 0
+
+          transform: rotate(-45deg)
+          transform-origin: center
+
+        &.is-open span:after
+          transform: rotate(45deg)
+
+
+  .mobile-nav
+    position: absolute
+
+    display: none
+    overflow: visible
+
+    width: 100%
+    padding: 65px 0 5px
+
+    transition: all 0.3s ease-in-out
+    transform: translateY(-100%)
+
+    background: white
+
+    ul
+      margin: 0
+      margin-top: 10px
+      padding: 0
+
+      list-style: none
+
+      li
+        margin-bottom: 10px
+
+        text-align: center
+
+        a
+          transition: 200ms ease-in-out
+          &:hover
+            color: #009999
+
+@media (max-width: 775px)
+  .home-wrap
+    header
+      width: auto
+      padding: 20px 0
+
+      .header-position
+        position: relative
+        top: auto
+        bottom: auto
+        left: auto
+
+        flex-direction: row
+
+        width: auto
+
+        align-items: center
+
+        .logo
+          height: 60px
+          margin: -5px 0
+
+        .site-nav,
+        .spacer
+          display: none
+
+        .mobile-nav-toggle
+          position: absolute
+          top: 0
+          right: 0
+
+          display: flex
+
+    .mobile-nav.is-open
+      display: block
+
+      transform: translateY(0%)
+
+      border-bottom: 5px double black
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4)

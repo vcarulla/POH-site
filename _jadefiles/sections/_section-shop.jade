@@ -1,0 +1,28 @@
+mixin thumb(link, image, description)
+	a(href="http://printopenhard.mercadoshops.com.ar/#{link}", target="_blank").thumb
+		img(src="assets/img/shop/shop-galery/#{image}.jpg", alt="#{description}")
+		label #{description}
+
+section.shop#model
+	.flex.flex--center
+		.col-50.flex.flex--center.ed-model
+			.col-1
+				h2 CARGA TU MODELO 3D
+				p Si tenes un modelo renderizado en Blender o 3DMAX, subilo a nuestro exclusivo software cotización automático.
+				p Allí podrás elegir la cantidad de copias, el color, el tipo de material y el acabado final que requiera tu proyecto.
+				figure
+					img(src="assets/img/shop/gears_in_gears_planetary.png", alt="Gears")
+				a(href="#model").home-cta CARGA TU MODELO
+					sub <-- Muy Pronto!!  
+
+		.col-50.flex.flex--center.eshop#shop
+			.col-1
+				h2 E-SHOP
+				+thumb("raspberry-case-fuente-2a-hdmi-sd8-wifi-kit-full-31012412xJM", 5, "RaspberryPi2 Kit Full")
+				+thumb("raspberry-case-fuente-2a-sd8-kit-standard-31283810xJM", 5, "RaspberryPi2 Kit Standard")
+				+thumb("raspberry-case-kit-basico-acrilico-31475684xJM", 5, "RaspberryPi2 Kit Básico Acrílico")
+				+thumb("raspberry-case-3d-kit-basico-3d-31476038xJM", 5, "RaspberryPi2 Kit Kit Básico 3D")
+				+thumb("http://printopenhard.mercadoshops.com.ar", 3, "Gps Dongle")
+				+thumb("raspberry-kit-media-center-soporte-vesa-42375346xJM", 6, "RaspberryPi2 Media Center")
+				.clearfix
+					a(href="http://printopenhard.mercadoshops.com.ar", target="_blank").home-cta E-SHOP

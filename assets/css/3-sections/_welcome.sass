@@ -1,0 +1,57 @@
+section.welcome
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  overflow: hidden
+  z-index: -1
+  height: 100vh
+  background:
+    image: url(../img/welcome/welcome.jpg)
+    position: top center
+    size: cover
+    attachment: fixed
+
+  .fullscreen-bg
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    overflow: hidden
+    z-index: -100
+    width: 100vw
+    height: 100vh
+
+  .fullscreen-bg--video
+    position: relative
+    width: 100%
+
+  .site-title
+    max-width: 300px
+    text-align: center
+    font-family: nasdaqer
+    position: absolute
+    top: 50%
+    margin-top: -150px
+    margin-left: -150px
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7)
+
+@media (min-aspect-ratio: 16/9)
+  .fullscreen-bg--video
+    height: 300%
+    top: -100%
+
+@media (max-aspect-ratio: 16/9)
+  .fullscreen-bg--video
+    width: 300%
+    left: -100%
+
+@media (max-width: 775px)
+  section.welcome
+    height: 600px
+    .site-title
+      top: 200px
+
+    .fullscreen-bg--video
+      display: none

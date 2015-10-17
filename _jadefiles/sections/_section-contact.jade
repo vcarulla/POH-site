@@ -1,0 +1,10 @@
+section.contact#contact
+	.flex.flex--center
+		.col-2
+			h2 CONTACTENOS
+			p Déjanos tu pregunta, sugerencia y te responderemos a la brevedad.
+			form(id="contactform", method="POST", action="")
+				input(name="name" placeholder="Nombre" type="text" value="" required)
+				input(name="email" placeholder="E-Mail" type="mail" value="" required)
+				textarea(name="messaje" placeholder="Dejanos tu mensaje" value="" required)
+				input.home-cta(id="submit" type="submit" value="ENVIAR")

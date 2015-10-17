@@ -1,0 +1,24 @@
+mixin nav-content()
+	ul
+		span
+		li: a(href="#what") ¿Qué es?
+		li: a(href="#model") Pedidos
+		li: a(href="#shop") E-Shop
+		li: a(href="#contact") Contacto
+
+.mobile-nav
+	+nav-content()
+
+header
+	
+	.header-position
+		
+		a(href="#")
+			h1.logo Print Open Hard
+
+		nav.site-nav
+			+nav-content()
+
+		span.spacer
+		
+		.mobile-nav-toggle: span

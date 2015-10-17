@@ -1,0 +1,44 @@
+section.contact
+
+  text-align: center
+  background:
+    position: center
+    color: rgba(1, 76, 30, 1)
+
+    image: url(../img/contact/contact-back.jpg)
+    size: cover
+  form
+    margin: auto
+    input, textarea
+      width: calc(50% - 29px)
+      height: 50px
+      margin: 10px
+
+      color: black
+      border: 2px solid rgba(1, 76, 30, 0.73)
+      border-radius: 5px
+
+      font-size: 20px
+
+      &::placeholder
+        color: rgba(1, 76, 30, 0.8)
+
+      &[type="submit"]
+        color: rgba(1, 76, 30, 0.8)
+        padding: 10px
+        &:hover
+          color: rgba(1, 76, 30, 1)
+
+    textarea
+      width: calc(100% - 30px)
+      min-height: 200px
+      margin-bottom: 10px
+
+  .home-cta
+    width: calc(100% - 29px)
+    font-size: 16px
+
+  @media (max-width: 775px)
+    form
+      input, textarea
+        width: calc(100% - 29px)

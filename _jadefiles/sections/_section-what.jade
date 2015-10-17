@@ -1,0 +1,20 @@
+mixin logos (link, alt)
+  .what-logos-block
+    img(src="assets/img/what/#{link}-logo.svg", alt='#{alt}', width='100px', height='100px' )
+
+section.what
+  #what
+  .flex.flex--center
+    .col-2
+      .what-title 
+        h2¿QUÉ ES POH?
+      p Somos una empresa dedicada a la comercialización de hardware de código abierto y diseño de impresiones 3D.
+      p Hardware y componentes electrónicos DIY para prototipado u hobbie. Impresiones en 3d con la más alta calidad y a la medida del cliente.
+      .what-logos
+        +logos ("openhardware", "Open Hardware")
+        +logos ("raspberry", "Raspberry-Pi")
+        +logos ("reprap", "RepRap")
+        +logos ("opensource", "Open Soruce")      
+  //- .flex
+  //-   .carousel
+  //-     p CAROUSEL Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

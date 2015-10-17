@@ -1,0 +1,64 @@
+footer
+  position: relative
+
+  padding-top: 20px
+
+  text-align: center
+
+  a
+    color: white
+
+  .license
+    p
+      font-size: 1em
+      line-height: 5px
+
+    .footer-title
+      //margin-bottom: 0px
+      line-height: 5px
+      a.cc
+        margin:0 5px
+
+        font-size: 1em
+
+      &:hover
+        .text-cc
+          visibility: visible
+
+      .text-cc
+        visibility: hidden
+
+        font-size: 8px
+        line-height: 2px
+
+      img
+        padding-right: 8px
+
+  p.desing
+    font-size: 0.8em
+    line-height: 5px
+
+  p.social
+    position: absolute
+    top: 50%
+    right: 20px
+
+    font-size: 2em
+    line-height: 5px
+    a
+      padding: 0px 5px
+      &:nth-child(1)
+        &:hover
+          color: #39538B
+      &:nth-child(2)
+        &:hover
+          color: #55ACEE
+
+@media (max-width: 775px)
+  footer
+    padding-left: 0px
+@media (max-width: 920px)
+    footer p.social
+      position: relative
+      top: inherit
+      right: inherit

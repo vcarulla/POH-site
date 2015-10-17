@@ -1,0 +1,113 @@
+.home-sections section.shop
+  padding: 0
+section.shop
+
+  .ed-model, .eshop
+    padding: 0
+
+
+    background:
+      position: center
+
+      color: #0754A6
+
+      image: url(../img/shop/33.png)
+      size: contain
+
+    .home-cta
+      color: #0754A6
+
+    &.eshop
+      background:
+        color: #0984B0
+
+        image: url(../img/shop/68.png)
+        size: contain
+      .home-cta
+        color: #0984B0
+
+  .ed-model
+    padding-bottom: 20px
+    p
+      text-align: center
+    figure
+      margin: 2em 40px
+
+      text-align: center
+
+  .col-1
+    max-width: 600px
+
+
+    background: none
+
+    h2
+      padding: 20px 0
+
+
+      text-align: center
+
+
+      font-size: 30px
+
+    .thumb
+      position: relative
+
+
+      display: block
+      float: left
+
+
+      width: calc(33.3% - 14px)
+      margin: 5px
+
+
+      transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1)
+
+
+      border: 2px solid white
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+
+      &:hover
+        transform: scale(1.05)
+        label
+          visibility: visible
+
+      &:last-of-type
+        margin-bottom: 20px
+
+      img
+        display: block
+
+
+        width: 100%
+
+      label
+        position: absolute
+        top: 0
+        right: 0
+
+
+        visibility: hidden
+
+
+        padding: 5px
+
+
+        color: white
+        border-bottom-left-radius: 10px
+        background-color: #0984B0
+        box-shadow: 0 3px 10px rgba(0,0,0,1)
+
+    .clearfix
+      clear: both
+
+
+      margin-bottom: 20px
+
+@media (max-width: 920px)
+  section.shop .col-1 .thumb
+    width: calc(50% - 14px)
+@media (max-width: 640px)
+  .col-50.flex.flex--center
+    display: flex
