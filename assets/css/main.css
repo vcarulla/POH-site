@@ -152,7 +152,7 @@ strong { font-weight: bold; }
 
 ul { list-style-type: none; }
 
-@font-face { font-family: nasdaqer; src: url(/../assets/font/NASDAQER.ttf); }
+@font-face { font-family: nasdaqer; src: url(../font/NASDAQER.ttf); }
 
 /* latin */
 @font-face { font-family: 'Ubuntu'; font-style: normal; font-weight: 400; src: local("Ubuntu"), url(https://fonts.gstatic.com/s/ubuntu/v8/sDGTilo5QRsfWu6Yc11AXg.woff2) format("woff2"); unicode-range: U0-0FF, U131, U152-153, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2212, U2215, UE0FF, UEFFD, UF000; }
